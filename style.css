@@ -1,47 +1,248 @@
-.parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #6a7088 0%, #deebe7 100%);
 }
+.parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px auto 1fr;
+}
+
 
 .header { grid-area: 1 / 1 / 2 / 6; }
-.main { grid-area: 2 / 1 / 4 / 6; }
-.div3 { grid-area: 4 / 1 / 5 / 2; }
-.div4 { grid-area: 4 / 2 / 5 / 3; }
-.div5 { grid-area: 4 / 3 / 5 / 4; }
-.div6 { grid-area: 4 / 4 / 5 / 5; }
-.div7 { grid-area: 4 / 4 / 5 / 5; }
-.div8 { grid-area: 4 / 5 / 5 / 6; }
-.div9 { grid-area: 5 / 1 / 6 / 2; }
-.div10 { grid-area: 5 / 2 / 6 / 3; }
-.div11 { grid-area: 5 / 3 / 6 / 4; }
-.div12 { grid-area: 5 / 4 / 6 / 5; }
-.div13 { grid-area: 5 / 5 / 6 / 6; }
 
-.header {
-    background-color: black;
-    
-}
-.header ul {
-    color: white;
-    list-style:  none;
-}
-.header > ul.header1 {
+.main   { grid-area: 2 / 1 / 3 / 3; }
+.div4   { grid-area: 2 / 3 / 3 / 6; }
+
+.intro  { grid-area: 3 / 1 / 4 / 6; }
+
+
+
+.navbar {
+    height: 100%;
     display: flex;
-    list-style: none;
-    color: aliceblue;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 40px;
-    margin-right: 3%;
-    
-}
-#name{
-    margin-right: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #deece8;
+
 }
 
-.main > ul > li{
+.nav-left, .nav-right {
+  flex: 1;
+}
+
+.nav-center {
+    flex: 2;
+    display: flex;          /* Ajouté pour aligner les li */
+    justify-content: center; /* Centre les liens dans le bloc du milieu */
     list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right {
+  display: flex;          /* Ajouté */
+  justify-content: flex-end; /* Aligne le contenu à l'extrémité droite */
+
+}
+
+.navbar  a{
+    text-decoration: none;
+    color: #362b3f;
+    font-size: 30px;
+}
+
+/* Effet au survol */
+a:hover {
+  color: #ff9900; /* Une couleur d'accentuation par exemple */
+  transition: color 0.3s ease;
+}
+
+
+/* Main content */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 105%;
+    padding-left: 50px;
+}
+
+
+#text{
+    width: 40rem;
+}
+
+.main li {
+    list-style: none;
+    font-size: 230%; 
+    width: 100%
+}
+
+
+#k{
+    color:#dfece8;
+    font-size: 240%;
+}
+
+.div4 img{
+    width: 700px;
+}
+.div4 {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    padding-left: 150px;
+    padding-top: 70px;
+}
+
+.intro ul{
+    list-style: none;
+    margin-left: 50px;
+}
+.intro{
+
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 230%;
+}
+#intro{
+    font-size: 80%;
+}
+.intro ul li {
+    margin-bottom: 50px;
+    color: #1c4d3a;
+    width: 95%;
+}
+
+/* From Uiverse.io by TISEPSE */ 
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #362b3f;
+  text-transform: uppercase;
+  color: #362b3f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+  background-color: #deece8;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #deece8;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #362b3f;
+}
+
+.btn2 .spn2 {
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+/* From Uiverse.io by TISEPSE */ 
+.contact {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #ff9900;
+  text-transform: uppercase;
+  color: #ff9900;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+  background-color: #deece8;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #deece8;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.contact:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.contact:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.contact:hover {
+  border: 2px solid #ff9900;
+}
+
+.contact .spnc2 {
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
