@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
+    <link href="py_css.css" rel="stylesheet">
+    <title>Kevin — Mario Maker Python</title>   
+</head>
+<body>
+<div class="parent">
+    <div class="header">
+        <nav class="navbar">
+            <div class="nav-left"><a href="../../index.html" class="logo">Kevin</a></div>
+            <ul class="nav-center">
+                <li><a href="../../index.html"><button class="btn2"><span class="spn2">HOME</span></button></a></li>
+                <li><a href="../../projet.html"><button class="btn2"><span class="spn2">Projets</span></button></a></li>
+                <li><a href="../../experience.html"><button class="btn2"><span class="spn2">Expériences</span></button></a></li>
+            </ul>
+            <div class="nav-right"><a href="../../contact.html"><button class="contact"><span class="spnc2">Contact</span></button></a></div>
+        </nav>
+    </div>
+
+    <div class="page-wrap">
+        <a href="../projet.html" class="back-link">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Retour aux projets
+        </a>
+
+        <div class="hero">
+            <div>
+                <div class="hero-label">03 — Jeu · Python · Groupe</div>
+                <h1 class="hero-title">Jeu de Plateforme<br><em>Mario Maker</em></h1>
+                <p class="hero-desc">Un jeu de plateforme inspiré de Super Mario Maker, développé en Python avec Pygame en première année. Éditeur de niveaux complet, deux types d'ennemis avec IA, système d'objets, musique originale composée par Kevin, et support manette Xbox 360.</p>
+                <div class="badge-row">
+                    <span class="badge">Python</span>
+                    <span class="badge">Pygame</span>
+                    <span class="badge purple">Projet de Groupe</span>
+                    <span class="badge orange">NSI · 1ère Année</span>
+                    <span class="badge">Terminé</span>
+                </div>
+                <a href="https://github.com/im-midnight/Mario_Maker-Python/blob/main/README.md" target="_blank" class="btn-github">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Voir sur GitHub
+                </a>
+            </div>
+
+            <div>
+                <div class="screenshot-main">
+                    <!--
+                        Pour ajouter tes screenshots :
+                        1. Mets tes images dans un dossier "screenshots/"
+                        2. Remplace ce bloc par : <img src="screenshots/gameplay.png" alt="Gameplay">
+                    -->
+                    <img src="../assets/menu_py.png" alt="Gameplay">
+                </div>
+                <div class="screenshot-thumbs">
+                    <!-- Remplace les emojis par des <img src="screenshots/..."> -->
+                    <div class="thumb"><img src="../assets/game1.png" alt="Gameplay"></div>
+                    <div class="thumb"><img src="../assets/game2.png" alt="Gameplay"></div>
+                    <div class="thumb"><img src="../assets/game3.png" alt="Gameplay"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="section-title">Fonctionnalités</div>
+        <div class="features-grid">
+            <div class="feat-card">
+                <span class="feat-icon">🗺️</span>
+                <div class="feat-name">Éditeur de Niveaux</div>
+                <p class="feat-desc">Grille sur 10 feuilles, placement de blocs, ennemis, objets et portails. Sauvegarde et chargement en JSON. Interface avec sélecteur d'éléments intégré.</p>
+            </div>
+            <div class="feat-card">
+                <span class="feat-icon">🏃</span>
+                <div class="feat-name">Physique du Joueur</div>
+                <p class="feat-desc">Déplacements, saut, course, grimpe d'échelle. Effets spéciaux : rebond sur slime, glissade sur glace, boules de feu avec cooldown.</p>
+            </div>
+            <div class="feat-card">
+                <span class="feat-icon">👾</span>
+                <div class="feat-name">Ennemis avec IA</div>
+                <p class="feat-desc">Zombie (attaque au contact dans un rayon de 8 blocs) et Cyclope (gestion de distance, tir de boule de feu toutes les 5s). Chacun possède 3 PV.</p>
+            </div>
+            <div class="feat-card">
+                <span class="feat-icon">🧱</span>
+                <div class="feat-name">Blocs Variés</div>
+                <p class="feat-desc">Briques, piques, blocs fantômes, slime, glace, échelles, boîtes mystères avec loot, portails de fin. Chaque bloc a un comportement unique.</p>
+            </div>
+            <div class="feat-card">
+                <span class="feat-icon">🎵</span>
+                <div class="feat-name">Musique Originale</div>
+                <p class="feat-desc">Bande sonore intégralement composée par Kevin, jouée en jeu via Pygame.</p>
+            </div>
+            <div class="feat-card">
+                <span class="feat-icon">🎮</span>
+                <div class="feat-name">Support Manette</div>
+                <p class="feat-desc">Compatible Xbox 360 en plus du clavier. Détection plug-and-play à n'importe quel moment de la partie.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Controls -->
+        <div class="section-title">Contrôles</div>
+        <div class="controls-grid">
+            <div class="controls-card">
+                <div class="controls-card-title">⌨️ Clavier</div>
+                <div class="ctrl-row"><span class="ctrl-action">Se déplacer</span><span class="ctrl-key">← →</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Grimper / Descendre</span><span class="ctrl-key">↑ ↓</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Sauter</span><span class="ctrl-key">ESPACE</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Courir</span><span class="ctrl-key">LSHIFT</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Lancer boule de feu</span><span class="ctrl-key">E</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Fin de niveau</span><span class="ctrl-key">A</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Pause</span><span class="ctrl-key">ÉCHAP</span></div>
+            </div>
+            <div class="controls-card">
+                <div class="controls-card-title">🎮 Manette Xbox 360</div>
+                <div class="ctrl-row"><span class="ctrl-action">Se déplacer</span><span class="ctrl-key">Joystick / Croix</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Grimper / Descendre</span><span class="ctrl-key">Joystick / Croix</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Sauter</span><span class="ctrl-key">A</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Courir</span><span class="ctrl-key">RT</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Lancer boule de feu</span><span class="ctrl-key">X</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Fin de niveau</span><span class="ctrl-key">Y</span></div>
+                <div class="ctrl-row"><span class="ctrl-action">Pause</span><span class="ctrl-key">START</span></div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Team -->
+        <div class="section-title">Équipe</div>
+        <div class="team-grid">
+            <div class="team-card kevin">
+                <div class="team-avatar">🎵</div>
+                <div class="team-name">Kevin</div>
+                <div class="team-role">Éditeur de niveaux<br>Musique originale</div>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">🏃</div>
+                <div class="team-name">Armand</div>
+                <div class="team-role">Physique du joueur<br>Graphismes & animations</div>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">📋</div>
+                <div class="team-name">Aaron</div>
+                <div class="team-role">Menus & UI<br>Architecture du jeu</div>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">👾</div>
+                <div class="team-name">Corentin</div>
+                <div class="team-role">Ennemis & blocs<br>Boules de feu</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Code -->
+        <div class="section-title">Extrait de Code</div>
+        <div class="code-block">
+            <div class="code-header">
+                <div class="code-dot" style="background:#ff5f57"></div>
+                <div class="code-dot" style="background:#febc2e"></div>
+                <div class="code-dot" style="background:#28c840"></div>
+                <div class="code-filename">player.py — Physique & collisions</div>
+            </div>
+            <pre><span class="c-kw">class</span> <span class="c-cls">Player</span>:
+    <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self, x, y):
+        self.x, self.y = x, y
+        self.vx, self.vy = <span class="c-num">0</span>, <span class="c-num">0</span>
+        self.on_ground = <span class="c-kw">False</span>
+        self.pv = <span class="c-num">3</span>          <span class="c-cm"># points de vie</span>
+        self.coins = <span class="c-num">0</span>
+
+    <span class="c-kw">def</span> <span class="c-fn">update</span>(self, blocs, items, ennemis):
+        <span class="c-cm"># Appliquer la gravité</span>
+        self.vy += <span class="c-num">0.5</span>
+        self.x += self.vx
+        self.y += self.vy
+        self.on_ground = <span class="c-kw">False</span>
+
+        <span class="c-kw">for</span> bloc <span class="c-kw">in</span> blocs:
+            <span class="c-kw">if</span> bloc.<span class="c-fn">est_solide</span>() <span class="c-kw">and</span> self.<span class="c-fn">collision</span>(bloc):
+                <span class="c-kw">if</span> self.vy > <span class="c-num">0</span>:           <span class="c-cm"># tombe sur le bloc</span>
+                    self.y = bloc.y - self.hauteur
+                    self.vy = <span class="c-num">0</span>
+                    self.on_ground = <span class="c-kw">True</span>
+
+    <span class="c-kw">def</span> <span class="c-fn">sauter</span>(self):
+        <span class="c-kw">if</span> self.on_ground:
+            self.vy = <span class="c-num">-12</span>   <span class="c-cm"># impulsion vers le haut</span></pre>
+        </div>
+
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ FERMER</button>
+    <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
+</div>
+
+<script>
+function openLightbox(src, alt) {
+    if (!src) return;
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightboxImg');
+    img.src = src;
+    img.alt = alt || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
+// Attach click to screenshot-main image if present
+document.querySelectorAll('.screenshot-main img, .thumb img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+// Also attach to .screenshot-main and .thumb if they contain an img
+document.querySelectorAll('.screenshot-main, .thumb').forEach(el => {
+    el.addEventListener('click', () => {
+        const img = el.querySelector('img');
+        if (img) openLightbox(img.src, img.alt);
+    });
+});
+</script>
+</body>
+</html>

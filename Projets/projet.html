@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="style_projet.css" rel="stylesheet">
+    <title>Kevin Phomasone — Projets</title>
+
+</head>
+<body>
+    <div class="parent">
+
+        <!-- Header -->
+        <div class="header">  
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="../index.html" class="logo">Kevin</a>
+                </div>
+                <ul class="nav-center">
+                    <li>
+                        <a href="../index.html">
+                            <button class="btn2"><span class="spn2">HOME</span></button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projet.html">
+                            <button class="btn2"><span class="spn2">Projets</span></button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../experience.html">
+                            <button class="btn2"><span class="spn2">Expériences</span></button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <a href="../contact.html">
+                        <button class="contact"><span class="spnc2">Contact</span></button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero -->
+        <div class="projects-hero">
+            <h1>Mes <em>Projets</em></h1>
+            <p>Découvrez mes réalisations académiques et personnelles, façonnées avec curiosité et passion pour le code.</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Projets réalisés</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0 </div>
+                <div class="stat-label"> Cafés bus </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Langages maîtrisés</div>
+            </div>
+           
+            <div class="stat-card">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Année d'études</div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-bar">
+            <button type="button" class="filter-btn active" onclick="filterCards('all', this)">Tous</button>
+            <button type="button" class="filter-btn" onclick="filterCards('web', this)">Web</button>
+            <button type="button" class="filter-btn" onclick="filterCards('game', this)">Jeux</button>
+            <button type="button" class="filter-btn" onclick="filterCards('school', this)">Académique</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+            <!-- Card 1 - Large -->
+            <div class="project-card card-large" data-cat="web school">
+                <div class="card-bg"></div>
+                <div class="card-inner">
+                    <div class="card-accent accent-purple"></div>
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <span class="card-status status-school">Académique</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-emoji">🌐</span>
+                        <h2 class="card-title">Portfolio Personnel</h2>
+                        <p class="card-desc">Site web de présentation développé en BUT Informatique. Design responsive avec navigation fluide, section projets et formulaire de contact intégré.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="../index.html" class="card-link">
+                            Voir le projet
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Medium -->
+            <div class="project-card card-medium" data-cat="game school">
+                <div class="card-bg"></div>
+                <div class="card-inner">
+                    <div class="card-accent accent-teal"></div>
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <span class="card-status status-done">Terminé</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-emoji">📱</span>
+                        <h2 class="card-title">Systeme de Particule</h2>
+                        <p class="card-desc">Projet Golang en 1ère Annee BUT INFO</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Golang</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            Voir le projet
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Small -->
+            <div class="project-card card-small" data-cat="game">
+                <div class="card-bg"></div>
+                <div class="card-inner">
+                    <div class="card-accent accent-green"></div>
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <span class="card-status status-done">Terminé</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-emoji">🐍</span>
+                        <h2 class="card-title">Mario Maker </h2>
+                        <p class="card-desc">Projet fin d'anneé developé en Terminal</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="python/py.html" class="card-link">
+                            Voir le projet
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 - Small -->
+            <div class="project-card card-small" data-cat="web ">
+                <div class="card-bg"></div>
+                <div class="card-inner">
+                    <div class="card-accent accent-orange"></div>
+                    <div class="card-header">
+                        <span class="card-number">04</span>
+                        <span class="card-status status-wip">En cours</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-emoji">⚡</span>
+                        <h2 class="card-title">WEB HTML</h2>
+                        <p class="card-desc">Sites Web développés avec HTML/CSS/JAVASCRIPT</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <a href="web/web.html" class="card-link">
+                            Voir le projet
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 - Small -->
+            <div class="project-card card-small" data-cat="school web">
+                <div class="card-bg"></div>
+                <div class="card-inner">
+                    <div class="card-accent accent-pink"></div>
+                    <div class="card-header">
+                        <span class="card-number">05</span>
+                        <span class="card-status status-school">Académique</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-emoji">🎓</span>
+                        <h2 class="card-title">Projet IUT</h2>
+                        <p class="card-desc">Projet de groupe réalisé en première année de BUT Informatique.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            Voir le projet
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function filterCards(cat, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.project-card');
+            let visibleIndex = 0;
+
+            // D'abord, on cache tout instantanément sans toucher au layout
+            cards.forEach((card) => {
+                card.classList.remove('card-anim-active');
+                card.style.opacity = '0';
+                card.style.pointerEvents = 'none';
+            });
+
+            // Ensuite, on retire les cartes non-visibles du flux après le fade
+            setTimeout(() => {
+                cards.forEach((card) => {
+                    const cats = card.dataset.cat || '';
+                    const isVisible = cat === 'all' || cats.split(' ').includes(cat);
+
+                    if (!isVisible) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = '';
+                    }
+                });
+
+                // Puis on anime les cartes visibles en cascade
+                cards.forEach((card) => {
+                    if (card.style.display === 'none') return;
+
+                    const delay = visibleIndex * 120;
+                    visibleIndex++;
+
+                    setTimeout(() => {
+                        card.style.opacity = '';
+                        card.style.pointerEvents = '';
+                        void card.offsetWidth;
+                        card.classList.add('card-anim-active');
+                    }, delay);
+                });
+
+            }, 150); // légère pause pour que le fade-out soit perçu
+        }
+    </script>
+</body>
+</html>
