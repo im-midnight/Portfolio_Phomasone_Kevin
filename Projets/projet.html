@@ -233,6 +233,19 @@
     </div>
 
     <script>
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = [
+                { el: document.querySelector('.projects-hero'), delay: 0 },
+                { el: document.querySelector('.stats-section'),  delay: 150 },
+                { el: document.querySelector('.section-divider'), delay: 250 },
+                { el: document.querySelector('.filter-bar'),      delay: 350 },
+            ];
+            elements.forEach(({ el, delay }) => {
+                if (!el) return;
+                setTimeout(() => el.classList.add('visible'), delay);
+            });
+        });
         function filterCards(cat, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
