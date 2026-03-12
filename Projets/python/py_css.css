@@ -160,3 +160,22 @@ pre { padding:2rem; font-family:'DM Mono',monospace; font-size:0.78rem; color:rg
 
 @media(max-width:1024px){ .hero{grid-template-columns:1fr;gap:3rem;} .features-grid{grid-template-columns:repeat(2,1fr);} .team-grid{grid-template-columns:repeat(2,1fr);} }
 @media(max-width:768px){ .page-wrap{padding:4rem 1.5rem;} .features-grid{grid-template-columns:1fr;} .controls-grid{grid-template-columns:1fr;} }
+.back-link,
+.hero-label,
+.hero-title,
+.hero-desc,
+.badge-row,
+.btn-github,
+.feat-card,
+.controls-grid,
+.team-grid,
+.code-block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

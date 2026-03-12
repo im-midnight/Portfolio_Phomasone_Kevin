@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="../../style.css" rel="stylesheet">
     <link href="web.css" rel="stylesheet">
+    <script src="web.js"></script>
     <title>Kevin — Projets Web</title>
      
 </head>
@@ -30,11 +31,11 @@
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Retour aux projets
         </a>
-
-        <div class="hero-label">04 — Projets Web · HTML / CSS / JS</div>
-        <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
-        <p class="hero-desc">Petites applications web développées en HTML, CSS et JavaScript. \n Clique sur une carte pour voir le site en direct</p>
-
+        <div class="cent">
+            <div class="hero-label">04 — Projets Web · HTML / CSS / JS</div>
+            <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
+            <p class="hero-desc">Petites applications web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
+        </div>
         <div class="sites-grid" id="sitesGrid">
 
             <!-- =============================================
@@ -161,24 +162,5 @@
         <iframe id="viewerIframe" src="" title="Aperçu du site"></iframe>
     </div>
 </div>
-
-<script>
-function openViewer(src, title) {
-    document.getElementById('viewerIframe').src = src;
-    document.getElementById('viewerTitle').textContent = title;
-    document.getElementById('viewer').classList.add('open');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeViewer() {
-    document.getElementById('viewer').classList.remove('open');
-    document.getElementById('viewerIframe').src = '';
-    document.body.style.overflow = '';
-}
-
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeViewer();
-});
-</script>
 </body>
 </html>
