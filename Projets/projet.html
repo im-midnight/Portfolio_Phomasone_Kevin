@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
     <link href="style_projet.css" rel="stylesheet">
     <script src="projet.js"></script>
     <title>Kevin Phomasone — Projets</title>
-
 </head>
 <body>
     <div class="parent">
 
-        <!-- Header -->
-        <div class="header">  
-            <nav class="navbar">
-                <div class="nav-left">
-                    <a href="../index.html" class="logo">Kevin</a>
-                </div>
-                <ul class="nav-center">
-                    <li>
-                        <a href="../index.html">
-                            <button class="btn2"><span class="spn2">HOME</span></button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="projet.html">
-                            <button class="btn2"><span class="spn2">Projets</span></button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../experience.html">
-                            <button class="btn2"><span class="spn2">Expériences</span></button>
-                        </a>
-                    </li>
-                </ul>
-                <div class="nav-right">
-                    <a href="../contact.html">
-                        <button class="contact"><span class="spnc2">Contact</span></button>
-                    </a>
-                </div>
-            </nav>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="../index.html" class="logo">K<span>.</span></a>
+
+            <ul class="nav-center">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="../experience.html">Expériences</a></li>
+                <li><a href="#">About me</a></li>
+            </ul>
+
+            <a href="../contact.html" class="btn-contact">Contact</a>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-menu-close" id="menuClose" aria-label="Fermer le menu">&times;</button>
+            <a href="../index.html">Home</a>
+            <a href="projet.html">Projets</a>
+            <a href="../experience.html">Expériences</a>
+            <a href="#">About me</a>
+            <a href="../contact.html" class="btn-contact-mob">Contact</a>
         </div>
 
         <!-- Hero -->
@@ -63,14 +60,13 @@
                 <div class="stat-label">Technologies</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">0 </div>
-                <div class="stat-label"> Cafés bus </div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Cafés bus</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">3</div>
                 <div class="stat-label">Langages maîtrisés</div>
             </div>
-           
             <div class="stat-card">
                 <div class="stat-number">1</div>
                 <div class="stat-label">Année d'études</div>
@@ -158,7 +154,7 @@
                     </div>
                     <div class="card-body">
                         <span class="card-emoji">🐍</span>
-                        <h2 class="card-title">Mario Maker </h2>
+                        <h2 class="card-title">Mario Maker</h2>
                         <p class="card-desc">Projet fin d'anneé developé en Terminal</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Python</span>
@@ -174,7 +170,7 @@
             </div>
 
             <!-- Card 4 - Small -->
-            <div class="project-card card-small" data-cat="web ">
+            <div class="project-card card-small" data-cat="web">
                 <div class="card-bg"></div>
                 <div class="card-inner">
                     <div class="card-accent accent-orange"></div>
@@ -230,7 +226,27 @@
             </div>
 
         </div>
-
     </div>
+
+    <script>
+        const btn = document.getElementById('hamburgerBtn');
+        const menu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('menuClose');
+
+        function openMenu() {
+            menu.classList.add('open');
+            btn.classList.add('active');
+        }
+        function closeMenu() {
+            menu.classList.remove('open');
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', () => {
+            menu.classList.contains('open') ? closeMenu() : openMenu();
+        });
+        closeBtn.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    </script>
 </body>
 </html>

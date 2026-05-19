@@ -3,91 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Phomasone — Portfolio</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Kevin Phomasone - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="parent">
-        <!-- Header -->
-        <div class="header">  
-            <nav class="navbar">
-                <div class="nav-left">
-                    <a href="#" class="logo">Kevin</a>
-                </div>
-                <ul class="nav-center">
-                    <li>
-                        <a href="index.html">
-                            <button class="btn2">
-                                <span class="spn2">HOME</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Projets/projet.html">
-                            <button class="btn2">
-                                <span class="spn2">Projets</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="experience.html"></a>
-                        <button class="btn2">
-                            <span class="spn2">Expériences</span>
-                        </button>
-                    </li>
-                </ul>
-                <div class="nav-right">
-                    <a href="contact.html">
-                        <button class="contact">
-                            <span class="spnc2">Contact</span>
-                        </button>
-                    </a>
-                </div>
-            </nav>
-        </div>
-        
-        <!-- Hero Section -->
-        <div class="hero-container">
-            <div class="main">
-                <div class="hero-content">
-                    <p class="greeting">Bonjour ! Je suis</p>
-                    <h1 class="name">PHOMASONE<br><span class="accent">KEVIN</span></h1>
-                    <p class="subtitle">Étudiant en 1ère année | BUT INFO</p>
-                </div>
-            </div>
-        
-            <div class="div4">
-                <div class="image-wrapper">
-                    <img src="assets/icon.png" alt="Portrait de Kevin Phomasone">
-                </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">K<span>.</span></a>
+
+        <ul class="nav-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projets/projet.html">Projets</a></li>
+            <li><a href="experience.html">Expériences</a></li>
+            <li><a href="#">About me</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-contact">Contact</a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="Projets/projet.html">Projets</a>
+        <a href="experience.html">Expériences</a>
+        <a href="#">About me</a>
+        <a href="#contact" class="btn-contact-mob">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero-container">
+        <div class="hero-content">
+            <h1 class="name">
+                PHOMASONE<br>
+                <span class="accent">KEVIN</span>
+            </h1>
+            <p class="subtitle">Étudiant en 1ère année · BUT Informatique</p>
+            <div class="hero-cta">
+                <a href="Projets/projet.html" class="cta-primary">Voir mes projets</a>
+                <a href="#" class="cta-secondary">Télécharger CV</a>
             </div>
         </div>
 
-        <!-- About Section -->
-        <div class="about-section">
-            <div class="about-container">
-                <div class="about-header">
-                    <span class="section-label">DÉCOUVRIR</span>
-                    <h2 class="section-title">À Propos de moi</h2>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-card">
-                        <div class="card-decoration"></div>
-                        <p class="about-text">
-                            Étudiant en <strong>BUT1 Informatique</strong>, passionné par le développement logiciel et les nouvelles technologies. Curieux et motivé, je développe mes compétences à travers des projets académiques et personnels, en utilisant des technologies comme <strong>HTML, CSS, Golang, Kotlin et Python</strong>.
-                        </p>
-                        <p class="about-text">
-                            Toujours prêt à apprendre et à relever de nouveaux défis.
-                        </p>
-                    </div>
-                    
-                </div>
+        <div class="hero-visual">
+            <div class="image-wrapper">
+                <img src="assets/icon.jpg" alt="Portrait de Kevin Phomasone">
+     
             </div>
         </div>
-    </div> 
+    </section>
+
+    <!-- SOCIAL BAR -->
+    <div class="social-bar" id = "contact">
+        <span class="social-label">Retrouvez-moi</span>
+
+        <a href="#" class="social-btn">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="#" class="social-btn">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a href="#" class="social-btn">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="#" class="social-btn">
+            <i class="fab fa-github"></i>
+            <span>Github</span>
+        </a>
+        <a href="#" class="social-btn">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
+
+    <script>
+        const btn = document.getElementById('hamburgerBtn');
+        const menu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('menuClose');
+
+        function openMenu() {
+            menu.classList.add('open');
+            btn.classList.add('active');
+        }
+        function closeMenu() {
+            menu.classList.remove('open');
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', () => {
+            menu.classList.contains('open') ? closeMenu() : openMenu();
+        });
+        closeBtn.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    </script>
+
 </body>
 </html>

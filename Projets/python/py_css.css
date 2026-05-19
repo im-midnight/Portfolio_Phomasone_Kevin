@@ -5,7 +5,7 @@
 .back-link {
     display: inline-flex; align-items: center; gap: 0.5rem;
     font-family: 'DM Mono', monospace; font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.69); text-decoration: none;
+    color: var(--accent); text-decoration: none;
     letter-spacing: 1px; text-transform: uppercase;
     transition: color 0.2s; margin-bottom: 2rem;
 }
@@ -27,10 +27,10 @@
     font-size: clamp(2.2rem, 4vw, 3.8rem); font-weight: 900;
     color: #fff; line-height: 1.05; letter-spacing: -2px; margin-bottom: 1.25rem;
 }
-.hero-title em { font-style: italic; color: transparent; -webkit-text-stroke: 2px rgba(74,222,128,0.5); }
+.hero-title em { font-style: italic; color: transparent; -webkit-text-stroke: 2px var(--tertiary); }
 .hero-desc {
     font-family: 'Outfit', sans-serif; font-size: 1rem;
-    color: rgba(255,255,255,0.6); line-height: 1.8; font-weight: 300; margin-bottom: 2rem;
+    color: var(--paragraph); line-height: 1.8; font-weight: 300; margin-bottom: 2rem;
 }
 
 .badge-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem; }
@@ -43,13 +43,24 @@
 .badge.orange { border-color: rgba(251,146,60,0.3); background: rgba(251,146,60,0.08); color: #fb923c; }
 
 .btn-github {
-    display: inline-flex; align-items: center; gap: 0.6rem;
-    font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;
-    padding: 12px 22px; border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(124, 123, 123, 0.07);
+    color: rgba(65, 65, 65, 0.8);
+    text-decoration: none;
+    transition: all 0.25s;
 }
-.btn-github:hover { background: rgba(255,255,255,0.13); border-color: rgba(255,255,255,0.4); color: #fff; }
+.btn-github:hover {
+    background: rgba(38, 220, 212, 0.13);
+    box-shadow: 0 6px 20px rgba(138, 190, 193, 0.45);
+}
 
 .screenshot-main {
     background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
@@ -77,30 +88,34 @@
 
 .section-title {
     font-family: 'DM Mono', monospace; font-size: 0.7rem;
-    color: rgba(255,255,255,0.35); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--paragraph); letter-spacing: 3px; text-transform: uppercase;
     margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;
 }
-.section-title::after { content:''; flex:1; height:1px; background:rgba(255,255,255,0.08); }
+.section-title::after { content:''; flex:1; height:1px; background:var(--paragraph) }
 
 .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; margin-bottom: 4rem; }
 .feat-card {
-    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(212, 255, 255, 0.51);; border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 16px; padding: 1.75rem; transition: all 0.3s;
 }
-.feat-card:hover { background:rgba(255,255,255,0.07); border-color:rgba(74,222,128,0.2); transform:translateY(-4px); }
+.feat-card:hover { 
+    background: rgba(107, 235, 241, 0.18);; 
+    border-color:rgba(74,222,128,0.2); transform:translateY(-4px); 
+    box-shadow: 0 6px 20px rgba(138, 190, 193, 0.45);
+}
 .feat-icon { font-size: 1.75rem; margin-bottom: 0.85rem; display: block; }
-.feat-name { font-family:'Playfair Display',serif; font-size:1rem; color:#fff; margin-bottom:0.5rem; }
-.feat-desc { font-family:'Outfit',sans-serif; font-size:0.85rem; color:rgba(255,255,255,0.5); line-height:1.65; font-weight:300; }
+.feat-name { font-family:'Playfair Display',serif; font-size:1rem; color:#585858; margin-bottom:0.5rem; }
+.feat-desc { font-family:'Outfit',sans-serif; font-size:0.85rem; color:var(--paragraph); line-height:1.65; font-weight:300; }
 
 .controls-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 4rem; }
 .controls-card {
-    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    background:rgb(196, 235, 235); border: 1px solid rgba(255,255,255,0.08);
     border-radius: 16px; padding: 1.75rem;
 }
-.controls-card-title { font-family:'DM Mono',monospace; font-size:0.65rem; color:rgba(255,255,255,0.3); letter-spacing:2px; text-transform:uppercase; margin-bottom:1.25rem; }
+.controls-card-title { font-family:'DM Mono',monospace; font-size:0.65rem; color:var(--header); letter-spacing:2px; text-transform:uppercase; margin-bottom:1.25rem; }
 .ctrl-row { display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0; border-bottom:1px solid rgba(255,255,255,0.05); }
 .ctrl-row:last-child { border-bottom:none; }
-.ctrl-action { font-family:'Outfit',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.6); font-weight:300; }
+.ctrl-action { font-family:'Outfit',sans-serif; font-size:0.88rem; color:var(--paragraph); font-weight:300; }
 .ctrl-key { font-family:'DM Mono',monospace; font-size:0.65rem; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:5px; padding:3px 8px; color:rgba(255,255,255,0.7); }
 
 .team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.25rem; margin-bottom:4rem; }
