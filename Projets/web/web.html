@@ -30,143 +30,173 @@
             <span></span>
         </button>
     </nav>
-<div class="parent">
-    
-    <div class="page-wrap">
-        <a href="../projet.html" class="back-link">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Retour aux projets
-        </a>
-        <div class="cent">
-            <div class="hero-label">04 — Projets Web · HTML / CSS / JS</div>
-            <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
-            <p class="hero-desc">Petites applications web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
-        </div>
-        <div class="sites-grid" id="sitesGrid">
 
-            <!-- =============================================
-                 CARTE 1 — BMI Calculator
-                 Remplace "bmi/index.html" par ton vrai chemin
-                 ============================================= -->
-            <div class="site-card" onclick="openViewer('realbmi/index.html', 'BMI Calculator')">
-                <div class="card-preview">
-                    <div class="card-preview-bar">
-                        <div class="preview-dot" style="background:#ff5f57"></div>
-                        <div class="preview-dot" style="background:#febc2e"></div>
-                        <div class="preview-dot" style="background:#28c840"></div>
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="menuClose" aria-label="Fermer">&times;</button>
+        <a href="../../index.html">Home</a>
+        <a href="../projet.html">Projets</a>
+        <a href="../../about.html">About me</a>
+        <a href="../../contact.html" class="btn-contact-mob">Contact</a>
+    </div>
+
+    <div class="parent">
+        
+        <div class="page-wrap">
+            <a href="../projet.html" class="back-link">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Retour aux projets
+            </a>
+            <div class="cent">
+                <div class="hero-label">04 — Projets Web · HTML / CSS / JS</div>
+                <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
+                <p class="hero-desc">Petites applications web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
+            </div>
+            <div class="sites-grid" id="sitesGrid">
+
+                <!-- =============================================
+                    CARTE 1 — BMI Calculator
+                    Remplace "bmi/index.html" par ton vrai chemin
+                    ============================================= -->
+                <div class="site-card" onclick="openViewer('realbmi/index.html', 'BMI Calculator')">
+                    <div class="card-preview">
+                        <div class="card-preview-bar">
+                            <div class="preview-dot" style="background:#ff5f57"></div>
+                            <div class="preview-dot" style="background:#febc2e"></div>
+                            <div class="preview-dot" style="background:#28c840"></div>
+                        </div>
+                        <div class="card-iframe-wrap">
+                            <iframe src="realbmi/index.html" tabindex="-1" aria-hidden="true"></iframe>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-label">
+                                <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                Ouvrir
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-iframe-wrap">
-                        <iframe src="realbmi/index.html" tabindex="-1" aria-hidden="true"></iframe>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-label">
-                            <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                            Ouvrir
+                    <div class="card-info">
+                        <div class="card-accent" style="background: linear-gradient(90deg,#fb923c,#ef4444)"></div>
+                        <div class="card-name">BMI Calculator</div>
+                        <p class="card-desc">Calcul de l'indice de masse corporelle en fonction du poids et de la taille.</p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="card-info">
-                    <div class="card-accent" style="background: linear-gradient(90deg,#fb923c,#ef4444)"></div>
-                    <div class="card-name">BMI Calculator</div>
-                    <p class="card-desc">Calcul de l'indice de masse corporelle en fonction du poids et de la taille.</p>
-                    <div class="card-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- =============================================
-                 CARTE 2 — Calculatrice
-                 Remplace "calculatrice/index.html" par ton vrai chemin
-                 ============================================= -->
-            <div class="site-card" onclick="openViewer('Calculator/index.html', 'Calculatrice')">
-                <div class="card-preview">
-                    <div class="card-preview-bar">
-                        <div class="preview-dot" style="background:#ff5f57"></div>
-                        <div class="preview-dot" style="background:#febc2e"></div>
-                        <div class="preview-dot" style="background:#28c840"></div>
+                <!-- =============================================
+                    CARTE 2 — Calculatrice
+                    Remplace "calculatrice/index.html" par ton vrai chemin
+                    ============================================= -->
+                <div class="site-card" onclick="openViewer('Calculator/index.html', 'Calculatrice')">
+                    <div class="card-preview">
+                        <div class="card-preview-bar">
+                            <div class="preview-dot" style="background:#ff5f57"></div>
+                            <div class="preview-dot" style="background:#febc2e"></div>
+                            <div class="preview-dot" style="background:#28c840"></div>
+                        </div>
+                        <div class="card-iframe-wrap">
+                            <iframe src="Calculator/index.html" tabindex="-1" aria-hidden="true"></iframe>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-label">
+                                <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                Ouvrir
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-iframe-wrap">
-                        <iframe src="Calculator/index.html" tabindex="-1" aria-hidden="true"></iframe>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-label">
-                            <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                            Ouvrir
+                    <div class="card-info">
+                        <div class="card-accent" style="background: linear-gradient(90deg,#38bdf8,#0284c7)"></div>
+                        <div class="card-name">Calculatrice</div>
+                        <p class="card-desc">Calculatrice simple avec les opérations de base : addition, soustraction, multiplication, division.</p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="card-info">
-                    <div class="card-accent" style="background: linear-gradient(90deg,#38bdf8,#0284c7)"></div>
-                    <div class="card-name">Calculatrice</div>
-                    <p class="card-desc">Calculatrice simple avec les opérations de base : addition, soustraction, multiplication, division.</p>
-                    <div class="card-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- =============================================
-                 CARTE 3 — Convertisseur de température
-                 Remplace "convertisseur/index.html" par ton vrai chemin
-                 ============================================= -->
-            <div class="site-card" onclick="openViewer('temperature/index.html', 'Convertisseur de Température')">
-                <div class="card-preview">
-                    <div class="card-preview-bar">
-                        <div class="preview-dot" style="background:#ff5f57"></div>
-                        <div class="preview-dot" style="background:#febc2e"></div>
-                        <div class="preview-dot" style="background:#28c840"></div>
+                <!-- =============================================
+                    CARTE 3 — Convertisseur de température
+                    Remplace "convertisseur/index.html" par ton vrai chemin
+                    ============================================= -->
+                <div class="site-card" onclick="openViewer('temperature/index.html', 'Convertisseur de Température')">
+                    <div class="card-preview">
+                        <div class="card-preview-bar">
+                            <div class="preview-dot" style="background:#ff5f57"></div>
+                            <div class="preview-dot" style="background:#febc2e"></div>
+                            <div class="preview-dot" style="background:#28c840"></div>
+                        </div>
+                        <div class="card-iframe-wrap">
+                            <iframe src="temperature/index.html" tabindex="-1" aria-hidden="true"></iframe>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-label">
+                                <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                Ouvrir
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-iframe-wrap">
-                        <iframe src="temperature/index.html" tabindex="-1" aria-hidden="true"></iframe>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-label">
-                            <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                            Ouvrir
+                    <div class="card-info">
+                        <div class="card-accent" style="background: linear-gradient(90deg,#4ade80,#16a34a)"></div>
+                        <div class="card-name">Convertisseur de Température</div>
+                        <p class="card-desc">Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.</p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="card-info">
-                    <div class="card-accent" style="background: linear-gradient(90deg,#4ade80,#16a34a)"></div>
-                    <div class="card-name">Convertisseur de Température</div>
-                    <p class="card-desc">Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.</p>
-                    <div class="card-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
+
+                <!-- =============================================
+                    POUR AJOUTER UN NOUVEAU SITE :
+                    Copie un bloc .site-card ci-dessus,
+                    change le src de l'iframe et les infos de la card.
+                    ============================================= -->
+
             </div>
-
-            <!-- =============================================
-                 POUR AJOUTER UN NOUVEAU SITE :
-                 Copie un bloc .site-card ci-dessus,
-                 change le src de l'iframe et les infos de la card.
-                 ============================================= -->
-
         </div>
     </div>
-</div>
 
-<!-- ===== IFRAME VIEWER ===== -->
-<div class="viewer" id="viewer">
-    <div class="viewer-bar">
-        <div class="viewer-dots">
-            <div class="viewer-dot vdot-red" onclick="closeViewer()" title="Fermer"></div>
-            <div class="viewer-dot vdot-yellow"></div>
-            <div class="viewer-dot vdot-green"></div>
+    <!-- ===== IFRAME VIEWER ===== -->
+    <div class="viewer" id="viewer">
+        <div class="viewer-bar">
+            <div class="viewer-dots">
+                <div class="viewer-dot vdot-red" onclick="closeViewer()" title="Fermer"></div>
+                <div class="viewer-dot vdot-yellow"></div>
+                <div class="viewer-dot vdot-green"></div>
+            </div>
+            <div class="viewer-title" id="viewerTitle">—</div>
+            <button type="button" class="viewer-close" onclick="closeViewer()">✕ Fermer</button>
         </div>
-        <div class="viewer-title" id="viewerTitle">—</div>
-        <button type="button" class="viewer-close" onclick="closeViewer()">✕ Fermer</button>
+        <div class="viewer-iframe-wrap">
+            <iframe id="viewerIframe" src="" title="Aperçu du site"></iframe>
+        </div>
     </div>
-    <div class="viewer-iframe-wrap">
-        <iframe id="viewerIframe" src="" title="Aperçu du site"></iframe>
-    </div>
-</div>
+    <script>
+        const btn = document.getElementById('hamburgerBtn');
+        const menu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('menuClose');
+
+        function openMenu() {
+            menu.classList.add('open');
+            btn.classList.add('active');
+        }
+        function closeMenu() {
+            menu.classList.remove('open');
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', () => {
+            menu.classList.contains('open') ? closeMenu() : openMenu();
+        });
+        closeBtn.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    </script>
 </body>
 </html>

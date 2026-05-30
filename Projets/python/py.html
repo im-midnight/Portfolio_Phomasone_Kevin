@@ -31,6 +31,14 @@
             <span></span>
         </button>
     </nav>
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="menuClose" aria-label="Fermer">&times;</button>
+        <a href="../../index.html">Home</a>
+        <a href="../projet.html">Projets</a>
+        <a href="../../about.html">About me</a>
+        <a href="../../contact.html" class="btn-contact-mob">Contact</a>
+    </div>
 
     <div class="page-wrap">
         <a href="../projet.html" class="back-link">
@@ -198,10 +206,30 @@
     </div>
 </div>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="lightbox-close" onclick="closeLightbox()">FERMER</button>
-    <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
-</div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">FERMER</button>
+        <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
+    </div>
+    <script>
+            const btn = document.getElementById('hamburgerBtn');
+            const menu = document.getElementById('mobileMenu');
+            const closeBtn = document.getElementById('menuClose');
+
+            function openMenu() {
+                menu.classList.add('open');
+                btn.classList.add('active');
+            }
+            function closeMenu() {
+                menu.classList.remove('open');
+                btn.classList.remove('active');
+            }
+
+            btn.addEventListener('click', () => {
+                menu.classList.contains('open') ? closeMenu() : openMenu();
+            });
+            closeBtn.addEventListener('click', closeMenu);
+            menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    </script>
 </body>
 </html>
