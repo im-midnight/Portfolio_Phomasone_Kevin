@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="../../style.css" rel="stylesheet">
     <link href="py_css.css" rel="stylesheet">
     <script src="py.js"></script>
@@ -15,26 +16,22 @@
     
 <div class="parent">
 
-    
     <!-- NAVBAR -->
     <nav class="navbar">
         <a href="#" class="logo">K<span>.</span></a>
-
         <ul class="nav-center">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../projet.html">Projets</a></li>
-            <li><a href="../../experience.html">Expériences</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="../../about.html">About me</a></li>
         </ul>
-
         <a href="#contact" class="btn-contact">Contact</a>
-
         <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </nav>
+
     <div class="page-wrap">
         <a href="../projet.html" class="back-link">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -61,15 +58,9 @@
 
             <div>
                 <div class="screenshot-main">
-                    <!--
-                        Pour ajouter tes screenshots :
-                        1. Mets tes images dans un dossier "screenshots/"
-                        2. Remplace ce bloc par : <img src="screenshots/gameplay.png" alt="Gameplay">
-                    -->
                     <img src="../assets/menu_py.png" alt="Gameplay">
                 </div>
                 <div class="screenshot-thumbs">
-                    <!-- Remplace les emojis par des <img src="screenshots/..."> -->
                     <div class="thumb"><img src="../assets/game1.png" alt="Gameplay"></div>
                     <div class="thumb"><img src="../assets/game2.png" alt="Gameplay"></div>
                     <div class="thumb"><img src="../assets/game3.png" alt="Gameplay"></div>
@@ -81,32 +72,32 @@
         <div class="section-title">Fonctionnalités</div>
         <div class="features-grid">
             <div class="feat-card">
-                <span class="feat-icon">🗺️</span>
+                <span class="feat-icon"><i class="fas fa-map"></i></span>
                 <div class="feat-name">Éditeur de Niveaux</div>
                 <p class="feat-desc">Grille sur 10 feuilles, placement de blocs, ennemis, objets et portails. Sauvegarde et chargement en JSON. Interface avec sélecteur d'éléments intégré.</p>
             </div>
             <div class="feat-card">
-                <span class="feat-icon">🏃</span>
+                <span class="feat-icon"><i class="fas fa-person-running"></i></span>
                 <div class="feat-name">Physique du Joueur</div>
                 <p class="feat-desc">Déplacements, saut, course, grimpe d'échelle. Effets spéciaux : rebond sur slime, glissade sur glace, boules de feu avec cooldown.</p>
             </div>
             <div class="feat-card">
-                <span class="feat-icon">👾</span>
+                <span class="feat-icon"><i class="fas fa-skull"></i></span>
                 <div class="feat-name">Ennemis avec IA</div>
                 <p class="feat-desc">Zombie (attaque au contact dans un rayon de 8 blocs) et Cyclope (gestion de distance, tir de boule de feu toutes les 5s). Chacun possède 3 PV.</p>
             </div>
             <div class="feat-card">
-                <span class="feat-icon">🧱</span>
+                <span class="feat-icon"><i class="fas fa-cubes"></i></span>
                 <div class="feat-name">Blocs Variés</div>
                 <p class="feat-desc">Briques, piques, blocs fantômes, slime, glace, échelles, boîtes mystères avec loot, portails de fin. Chaque bloc a un comportement unique.</p>
             </div>
             <div class="feat-card">
-                <span class="feat-icon">🎵</span>
+                <span class="feat-icon"><i class="fas fa-music"></i></span>
                 <div class="feat-name">Musique Originale</div>
                 <p class="feat-desc">Bande sonore intégralement composée par Kevin, jouée en jeu via Pygame.</p>
             </div>
             <div class="feat-card">
-                <span class="feat-icon">🎮</span>
+                <span class="feat-icon"><i class="fas fa-gamepad"></i></span>
                 <div class="feat-name">Support Manette</div>
                 <p class="feat-desc">Compatible Xbox 360 en plus du clavier. Détection plug-and-play à n'importe quel moment de la partie.</p>
             </div>
@@ -118,7 +109,7 @@
         <div class="section-title">Contrôles</div>
         <div class="controls-grid">
             <div class="controls-card">
-                <div class="controls-card-title">⌨️ Clavier</div>
+                <div class="controls-card-title"><i class="fas fa-keyboard"></i> Clavier</div>
                 <div class="ctrl-row"><span class="ctrl-action">Se déplacer</span><span class="ctrl-key">← →</span></div>
                 <div class="ctrl-row"><span class="ctrl-action">Grimper / Descendre</span><span class="ctrl-key">↑ ↓</span></div>
                 <div class="ctrl-row"><span class="ctrl-action">Sauter</span><span class="ctrl-key">ESPACE</span></div>
@@ -128,7 +119,7 @@
                 <div class="ctrl-row"><span class="ctrl-action">Pause</span><span class="ctrl-key">ÉCHAP</span></div>
             </div>
             <div class="controls-card">
-                <div class="controls-card-title">🎮 Manette Xbox 360</div>
+                <div class="controls-card-title"><i class="fas fa-gamepad"></i> Manette Xbox 360</div>
                 <div class="ctrl-row"><span class="ctrl-action">Se déplacer</span><span class="ctrl-key">Joystick / Croix</span></div>
                 <div class="ctrl-row"><span class="ctrl-action">Grimper / Descendre</span><span class="ctrl-key">Joystick / Croix</span></div>
                 <div class="ctrl-row"><span class="ctrl-action">Sauter</span><span class="ctrl-key">A</span></div>
@@ -145,22 +136,22 @@
         <div class="section-title">Équipe</div>
         <div class="team-grid">
             <div class="team-card kevin">
-                <div class="team-avatar">🎵</div>
+                <div class="team-avatar"><i class="fas fa-music"></i></div>
                 <div class="team-name">Kevin</div>
                 <div class="team-role">Éditeur de niveaux<br>Musique originale</div>
             </div>
-            <div class="team-card">
-                <div class="team-avatar">🏃</div>
+            <div class="team-card armand">
+                <div class="team-avatar"><i class="fas fa-person-running"></i></div>
                 <div class="team-name">Armand</div>
                 <div class="team-role">Physique du joueur<br>Graphismes & animations</div>
             </div>
-            <div class="team-card">
-                <div class="team-avatar">📋</div>
+            <div class="team-card aaron">
+                <div class="team-avatar"><i class="fas fa-table-list"></i></div>
                 <div class="team-name">Aaron</div>
                 <div class="team-role">Menus & UI<br>Architecture du jeu</div>
             </div>
-            <div class="team-card">
-                <div class="team-avatar">👾</div>
+            <div class="team-card corentin">
+                <div class="team-avatar"><i class="fas fa-skull"></i></div>
                 <div class="team-name">Corentin</div>
                 <div class="team-role">Ennemis & blocs<br>Boules de feu</div>
             </div>
@@ -209,7 +200,7 @@
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="lightbox-close" onclick="closeLightbox()">✕ FERMER</button>
+    <button class="lightbox-close" onclick="closeLightbox()">FERMER</button>
     <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
 </div>
 </body>

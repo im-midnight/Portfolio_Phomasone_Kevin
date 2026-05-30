@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="../../style.css" rel="stylesheet">
     <link href="web.css" rel="stylesheet">
@@ -13,19 +12,26 @@
      
 </head>
 <body>
-<div class="parent">
-    <div class="header">
-        <nav class="navbar">
-            <div class="nav-left"><a href="../../index.html" class="logo">Kevin</a></div>
-            <ul class="nav-center">
-                <li><a href="../../index.html"><button class="btn2"><span class="spn2">HOME</span></button></a></li>
-                <li><a href="../projet.html"><button class="btn2"><span class="spn2">Projets</span></button></a></li>
-                <li><a href="../../experience.html"><button class="btn2"><span class="spn2">Expériences</span></button></a></li>
-            </ul>
-            <div class="nav-right"><a href="../../contact.html"><button class="contact"><span class="spnc2">Contact</span></button></a></div>
-        </nav>
-    </div>
+     <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">K<span>.</span></a>
 
+        <ul class="nav-center">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../projet.html">Projets</a></li>
+            <li><a href="../../about.html">About me</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-contact">Contact</a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+<div class="parent">
+    
     <div class="page-wrap">
         <a href="../projet.html" class="back-link">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
