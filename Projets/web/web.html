@@ -22,7 +22,7 @@
             <li><a href="../../about.html">About me</a></li>
         </ul>
 
-        <a href="#contact" class="btn-contact">Contact</a>
+        <a href="../../contact.html" class="btn-contact">Contact</a>
 
         <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
             <span></span>
@@ -52,7 +52,36 @@
                 <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
                 <p class="hero-desc">Petites applications web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
             </div>
+
+            
             <div class="sites-grid" id="sitesGrid">
+                <div class="site-card" onclick="openViewer('Folex/page-acceuil/acceuil.html', 'Site Web Montre')">
+                    <div class="card-preview">
+                        <div class="card-preview-bar">
+                            <div class="preview-dot" style="background:#ff5f57"></div>
+                            <div class="preview-dot" style="background:#febc2e"></div>
+                            <div class="preview-dot" style="background:#28c840"></div>
+                        </div>
+                        <div class="card-iframe-wrap">
+                            <iframe src="Folex/page-acceuil/acceuil.html" tabindex="-1" aria-hidden="true"></iframe>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-label">
+                                <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                Ouvrir
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-accent" style="background: linear-gradient(90deg,#4ade80,#16a34a)"></div>
+                        <div class="card-name">Site Web de Montre</div>
+                        <p class="card-desc">Projet de Site marchandise - Apprentissage du css</p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- =============================================
                     CARTE 1 — BMI Calculator
@@ -152,12 +181,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- =============================================
-                    POUR AJOUTER UN NOUVEAU SITE :
-                    Copie un bloc .site-card ci-dessus,
-                    change le src de l'iframe et les infos de la card.
-                    ============================================= -->
 
             </div>
         </div>

@@ -24,7 +24,7 @@
             <li><a href="../projet.html">Projets</a></li>
             <li><a href="../../about.html">About me</a></li>
         </ul>
-        <a href="#contact" class="btn-contact">Contact</a>
+        <a href="../../contact.html" class="btn-contact">Contact</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
@@ -66,12 +66,9 @@
 
             <div>
                 <div class="screenshot-main">
-                    <img src="../assets/menu_py.png" alt="Gameplay">
-                </div>
-                <div class="screenshot-thumbs">
-                    <div class="thumb"><img src="../assets/game1.png" alt="Gameplay"></div>
-                    <div class="thumb"><img src="../assets/game2.png" alt="Gameplay"></div>
-                    <div class="thumb"><img src="../assets/game3.png" alt="Gameplay"></div>
+                    <video autoplay muted loop playsinline>
+                        <source src="../../assets/python.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -217,7 +214,7 @@
             const closeBtn = document.getElementById('menuClose');
 
             function openMenu() {
-                menu.classList.add('open');
+                menu.classList.add('open'); 
                 btn.classList.add('active');
             }
             function closeMenu() {
