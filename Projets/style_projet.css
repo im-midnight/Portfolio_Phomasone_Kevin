@@ -159,9 +159,9 @@
 
 /* Accents avec les couleurs de la palette + quelques compléments harmonieux */
 .accent-purple { background: linear-gradient(90deg, #272343, #2d334a); }
-.accent-teal   { background: linear-gradient(90deg, #bae8e8, #0891b2); }
-.accent-orange { background: linear-gradient(90deg, #ffd803, #f59e0b); }
-.accent-green  { background: linear-gradient(90deg, #e3f6f5, #16a34a); }
+.accent-red   { background: linear-gradient(90deg, #ffb8b8, #c40000); }
+.accent-green { background: linear-gradient(90deg, #e3f6f5, #16a34a); }
+.accent-blue  { background: linear-gradient(90deg, #cef3f7, #09acec); }
 .accent-pink   { background: linear-gradient(90deg, #bae8e8, #272343); }
 
 /* Card header */

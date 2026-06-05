@@ -50,7 +50,7 @@ body {
 .xp-hero-desc {
     font-size: 1.1rem;
     line-height: 1.8;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
     font-weight: 300;
     opacity: 0.8;
@@ -75,7 +75,6 @@ body {
 }
 .xp-stat-card:hover {
     transform: translateY(-4px);
-    border-color: var(--headline);
     background: var(--bg);
     box-shadow: 0 12px 32px rgba(39, 35, 67, 0.1);
 }
