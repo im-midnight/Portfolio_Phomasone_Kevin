@@ -50,7 +50,6 @@
 .projects-hero h1 em {
     font-style: italic;
     color: var(--tertiary);
-    -webkit-text-stroke: 2px var(--tertiary);
 }
 
 .projects-hero p {
