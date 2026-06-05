@@ -38,7 +38,7 @@ body {
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: var(--headline);
@@ -264,7 +264,7 @@ body {
 }
 
 .name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(2.6rem, 5vw, 4.8rem);
     font-weight: 700;
     color: var(--headline);

@@ -35,7 +35,7 @@ body {
     opacity: 0.5;
 }
 .xp-hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4.2rem);
     font-weight: 900;
     color: var(--headline);
@@ -44,8 +44,8 @@ body {
 }
 .xp-hero-title em {
     font-style: italic;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--tertiary);
+    color: var(--tertiary);
+    
 }
 .xp-hero-desc {
     font-size: 1.1rem;
@@ -266,7 +266,6 @@ body {
     opacity: 0.6;
 }
 .xp-timeline-title {
-    font-family: 'Playfair Display', serif;
     font-size: 1.35rem;
     color: var(--headline);
     font-weight: 700;
@@ -360,7 +359,6 @@ body {
     border-color: var(--accent);
 }
 .xp-looking-title {
-    font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
     color: var(--headline);
     margin-bottom: 0.75rem;

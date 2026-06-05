@@ -38,7 +38,7 @@
 }
 
 .projects-hero h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 900;
     color: var(--headline);
@@ -49,7 +49,7 @@
 
 .projects-hero h1 em {
     font-style: italic;
-    color: transparent;
+    color: var(--tertiary);
     -webkit-text-stroke: 2px var(--tertiary);
 }
 
@@ -218,7 +218,6 @@
 }
 
 .card-title {
-    font-family: 'Playfair Display', serif;
     font-size: clamp(1.4rem, 2.5vw, 2rem);
     font-weight: 700;
     color: var(--headline);

@@ -46,7 +46,7 @@ body {
     opacity: 0.5;
 }
 .contact-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4.2rem);
     font-weight: 900;
     color: var(--headline);
@@ -55,7 +55,7 @@ body {
 }
 .contact-title em {
     font-style: italic;
-    color: transparent;
+    color: var(--tertiary);
     -webkit-text-stroke: 2px var(--tertiary);
 }
 .contact-desc {
@@ -94,7 +94,6 @@ body {
 }
 
 .contact-form-title {
-    font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--headline);

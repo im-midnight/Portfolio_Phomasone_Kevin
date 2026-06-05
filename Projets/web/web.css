@@ -53,7 +53,7 @@
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(3rem, 8vw, 5.5rem);
     font-weight: 900;
     color: var(--headline);
@@ -63,7 +63,7 @@
 }
 .hero-title em {
     font-style: italic;
-    color: transparent;
+    color: #9cf36b;
     -webkit-text-stroke: 2px #9cf36b;
 }
 
@@ -210,7 +210,6 @@
 .site-card:hover .card-accent { width: 55px; }
 
 .card-name {
-    font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--headline);

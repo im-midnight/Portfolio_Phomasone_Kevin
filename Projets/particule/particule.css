@@ -64,8 +64,9 @@
 }
 .hero-title em {
     font-style: italic;
-    color: transparent;
-    -webkit-text-stroke: 2px #e8baba;
+    color: #e8baba;
+    font-family: 'Clash Display', sans-serif;
+    -webkit-text-stroke: 2px #f4b6b6;
 }
 
 .hero-desc {
@@ -251,7 +252,6 @@
     letter-spacing: 0.5px;
 }
 .feat-name {
-    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     color: var(--headline);
     margin-bottom: 0.5rem;
