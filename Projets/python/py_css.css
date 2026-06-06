@@ -67,7 +67,6 @@
     font-style: italic;
     color: var(--tertiary);
     font-family: 'Clash Display', sans-serif;
-    -webkit-text-stroke: 2px var(--tertiary);
 }
 
 .hero-desc {

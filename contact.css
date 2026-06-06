@@ -56,7 +56,6 @@ body {
 .contact-title em {
     font-style: italic;
     color: var(--tertiary);
-    -webkit-text-stroke: 2px var(--tertiary);
 }
 .contact-desc {
     font-size: 1rem;
